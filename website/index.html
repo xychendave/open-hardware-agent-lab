@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#07111f" />
-    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#06090f" />
+    <meta name="color-scheme" content="dark" />
     <title>清乐智能｜Physical AI for Science</title>
     <meta
       name="description"
-      content="清乐智能以 Physical AI for Science 为路径，连接智能体、科学仪器与机器人，加速物理世界中的智能与发现。"
+      content="清乐智能正在构建面向科学实验的 Physical AI 基础设施，让智能体在安全边界内理解、调用并学习真实设备。"
     />
     <link rel="canonical" href="https://xychendave.github.io/open-hardware-agent-lab/" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
@@ -16,10 +16,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:title" content="清乐智能｜Physical AI for Science" />
-    <meta
-      property="og:description"
-      content="让 AI 进入真实世界，让科学实验进入智能体时代。"
-    />
+    <meta property="og:description" content="让科学智能体真正进入实验现场。" />
     <meta property="og:url" content="https://xychendave.github.io/open-hardware-agent-lab/" />
     <meta
       property="og:image"
@@ -27,7 +24,7 @@
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="清乐智能｜Physical AI for Science" />
-    <meta name="twitter:description" content="连接智能体、科学仪器与机器人。" />
+    <meta name="twitter:description" content="让科学智能体真正进入实验现场。" />
     <meta
       name="twitter:image"
       content="https://xychendave.github.io/open-hardware-agent-lab/assets/hero-physical-ai.jpg"
@@ -45,17 +42,13 @@
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
+    <div class="layout-lines" aria-hidden="true"></div>
 
     <header class="site-header" data-header>
-      <div class="header-inner">
+      <div class="header-shell glass-panel">
         <a class="brand" href="#top" aria-label="清乐智能首页">
-          <span class="brand-mark" aria-hidden="true">
-            <i></i><i></i><i></i>
-          </span>
-          <span class="brand-type">
-            <strong>清乐智能</strong>
-            <small>PHYSICAL AI FOR SCIENCE</small>
-          </span>
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-type"><strong>清乐智能</strong><small>PHYSICAL AI FOR SCIENCE</small></span>
         </a>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -63,182 +56,172 @@
         </button>
 
         <nav id="site-nav" class="site-nav" aria-label="主导航">
-          <a href="#thesis">方向</a>
-          <a href="#architecture">架构</a>
-          <a href="#lab">项目</a>
-          <a href="#roadmap">路线图</a>
-          <a class="nav-github" href="https://github.com/xychendave/open-hardware-agent-lab" target="_blank" rel="noreferrer">
-            GitHub <span aria-hidden="true">↗</span>
-          </a>
+          <a href="#thesis">我们的判断</a>
+          <a href="#architecture">系统架构</a>
+          <a href="#lab">开放实验室</a>
+          <a href="#connect">一起构建</a>
         </nav>
+
+        <a class="header-action" href="https://github.com/xychendave/open-hardware-agent-lab" target="_blank" rel="noreferrer">
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
       </div>
     </header>
 
     <main id="main">
-      <section id="top" class="hero section-dark" aria-labelledby="hero-title">
-        <div class="hero-grid page-shell">
-          <div class="hero-copy reveal">
-            <p class="eyebrow"><span></span> QINGLE INTELLIGENCE · PHYSICAL AI LAB</p>
-            <h1 id="hero-title">让 AI 进入真实世界，<br />让科学实验进入智能体时代。</h1>
-            <p class="hero-lede">
-              清乐智能以 <strong>Physical AI for Science</strong> 为技术主线，连接模型、智能体、科学仪器与机器人，构建可验证、可复现、可持续进化的物理智能系统。
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#architecture">查看技术架构 <span aria-hidden="true">↘</span></a>
-              <a class="button button-ghost" href="https://github.com/xychendave/open-hardware-agent-lab" target="_blank" rel="noreferrer">访问开放实验室</a>
-            </div>
+      <section id="top" class="hero">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="page-shell hero-content">
+          <a class="status-badge reveal" href="#lab">
+            <i aria-hidden="true"></i>
+            <span>PUBLIC PROTOTYPE · BUILDING IN THE OPEN</span>
+            <b aria-hidden="true">→</b>
+          </a>
+
+          <p class="hero-kicker reveal">QINGLE INTELLIGENCE / TOWARDS PHYSICAL AGI</p>
+          <h1 class="reveal">让科学智能体<br /><em>真正进入实验现场。</em></h1>
+          <p class="hero-lede reveal">
+            清乐智能正在构建面向科学实验的 <strong>Physical AI 基础设施</strong>，让智能体能够在安全边界内理解、调用并学习真实设备。
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#lab">查看正在构建什么 <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://github.com/xychendave/open-hardware-agent-lab" target="_blank" rel="noreferrer">
+              <span class="github-dot" aria-hidden="true"></span> 浏览开放项目
+            </a>
           </div>
 
-          <figure class="hero-visual reveal">
-            <img
-              src="./assets/hero-physical-ai.jpg"
-              width="1672"
-              height="941"
-              alt="两台机械臂在深色科学实验室中协同操作透明样品盘"
-            />
-            <div class="visual-overlay" aria-hidden="true">
-              <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
-              <span class="corner corner-bl"></span><span class="corner corner-br"></span>
-              <span class="scan-line"></span>
+          <div class="hero-mockup reveal">
+            <div class="mockup-frame">
+              <div class="mockup-toolbar">
+                <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <span>QINGLE / PHYSICAL-AI-LAB / WORKCELL-01</span>
+                <div class="live-state"><i></i> REFERENCE SYSTEM</div>
+              </div>
+              <figure class="mockup-visual">
+                <img
+                  src="./assets/hero-physical-ai.jpg"
+                  width="1672"
+                  height="941"
+                  alt="两台机械臂在科学实验室中协同操作透明样品盘"
+                />
+                <div class="focus-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                <figcaption>
+                  <div><small>MISSION</small><strong>Observe → Reason → Act → Verify</strong></div>
+                  <div><small>CONTROL MODE</small><strong>SIMULATION FIRST</strong></div>
+                </figcaption>
+              </figure>
             </div>
-            <figcaption>
-              <span>DUAL-ARM / SCIENTIFIC WORKCELL</span>
-              <span class="status"><i></i> REFERENCE SYSTEM</span>
-            </figcaption>
-          </figure>
-        </div>
-
-        <div class="signal-strip" aria-label="技术方向">
-          <div class="page-shell">
-            <span>01 / AGENTIC CONTROL</span>
-            <span>02 / HARDWARE INTEROPERABILITY</span>
-            <span>03 / SCIENTIFIC AUTOMATION</span>
-            <span>04 / EMBODIED LEARNING</span>
           </div>
         </div>
       </section>
 
-      <section id="thesis" class="thesis section-paper">
-        <div class="page-shell split-heading">
-          <div class="section-index reveal">
-            <p class="eyebrow eyebrow-dark"><span></span> 01 / OUR THESIS</p>
-            <p class="section-note">从数字智能走向物理智能</p>
+      <section class="stack-ribbon" aria-label="参考技术栈">
+        <div class="page-shell ribbon-inner">
+          <span class="ribbon-label">REFERENCE STACK</span>
+          <div class="stack-chips">
+            <span><b>MHS</b> Hardware semantics</span>
+            <span><b>DSH</b> Agent harness</span>
+            <span><b>MCP</b> Tool protocol</span>
+            <span><b>LR</b> LeRobot</span>
+            <span><b>RB</b> reBot</span>
           </div>
-          <div class="thesis-copy reveal">
-            <h2>下一代 AGI，不只理解世界，也必须在世界中学习。</h2>
-            <p>
-              真正进入科学现场的智能体，需要感知不确定性、调用真实设备、在安全边界内行动，并从每一次实验结果中更新判断。我们的工作，是把这一条闭环变成开放、可组合的工程系统。
-            </p>
-          </div>
-        </div>
-
-        <div class="learning-loop page-shell reveal" aria-label="物理智能学习闭环">
-          <div class="loop-center">
-            <small>PHYSICAL<br />LEARNING LOOP</small>
-            <strong>发现</strong>
-          </div>
-          <ol>
-            <li><span>01</span><strong>观察</strong><small>OBSERVE</small></li>
-            <li><span>02</span><strong>推理</strong><small>REASON</small></li>
-            <li><span>03</span><strong>行动</strong><small>ACT</small></li>
-            <li><span>04</span><strong>验证</strong><small>VERIFY</small></li>
-          </ol>
         </div>
       </section>
 
-      <section id="architecture" class="architecture section-dark">
+      <section id="thesis" class="section thesis">
+        <div class="page-shell">
+          <div class="section-heading centered reveal">
+            <span class="section-badge">01 / OUR THESIS</span>
+            <h2>下一代 AGI 不只理解世界，<br />也必须在世界中学习。</h2>
+            <p>科学是 Physical AI 最严格、也最有价值的训练场：每一次行动都产生真实结果，每一个结果都可以被验证。</p>
+          </div>
+
+          <div class="bento-grid thesis-bento">
+            <article class="bento-card bento-large reveal">
+              <div class="card-topline"><span>PHYSICAL LEARNING LOOP</span><i>01</i></div>
+              <div class="loop-visual" aria-label="物理智能学习闭环">
+                <div class="loop-core"><small>REAL-WORLD<br />FEEDBACK</small><strong>发现</strong></div>
+                <ol>
+                  <li><span>01</span><b>观察</b><small>OBSERVE</small></li>
+                  <li><span>02</span><b>推理</b><small>REASON</small></li>
+                  <li><span>03</span><b>行动</b><small>ACT</small></li>
+                  <li><span>04</span><b>验证</b><small>VERIFY</small></li>
+                </ol>
+              </div>
+            </article>
+
+            <article class="bento-card insight-card reveal">
+              <div class="card-topline"><span>CORE INSIGHT</span><i>02</i></div>
+              <div class="insight-orbit" aria-hidden="true"><i></i><i></i><span>AI</span></div>
+              <h3>实验不是 AI 的终点，<br />而是下一轮学习的起点。</h3>
+              <p>把机器人、仪器与实验反馈接入同一个可观测闭环。</p>
+            </article>
+
+            <article class="bento-card principle-card reveal">
+              <div class="card-topline"><span>NON-NEGOTIABLE</span><i>03</i></div>
+              <div class="shield-mark" aria-hidden="true">◇</div>
+              <h3>安全不是补丁，<br />而是系统边界。</h3>
+              <p>动作验证、权限控制、状态回读、人工接管与紧急停止从第一天进入架构。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture" class="section architecture">
         <div class="page-shell">
           <div class="section-heading reveal">
-            <p class="eyebrow"><span></span> 02 / REFERENCE ARCHITECTURE</p>
-            <h2>模型负责推理，Harness 负责编排，Driver 负责安全。</h2>
-            <p>把自然语言任务收敛为可审计、可中断、默认安全的硬件动作。</p>
+            <span class="section-badge">02 / REFERENCE ARCHITECTURE</span>
+            <h2>把模型能力，收敛为可信的物理行动。</h2>
+            <p>模型负责理解与推理，Harness 负责任务编排，硬件契约描述能力边界，Driver 对每一次动作做最终安全检查。</p>
           </div>
 
-          <div class="architecture-flow reveal" aria-label="从科学目标到机械臂执行的参考架构">
-            <div class="flow-node flow-input">
-              <small>INPUT</small><strong>科学目标</strong><span>Natural-language intent</span>
+          <div class="architecture-panel glass-panel reveal">
+            <div class="panel-header">
+              <span>AGENT-TO-HARDWARE CONTROL PLANE</span>
+              <span>VERSION / REFERENCE-0.1</span>
             </div>
-            <span class="flow-arrow" aria-hidden="true">→</span>
-            <div class="flow-node">
-              <small>ORCHESTRATION</small><strong>DeepSeek Harness</strong><span>Plan · Route · Observe</span>
+            <div class="architecture-flow" aria-label="从科学目标到机械臂执行的参考架构">
+              <article class="flow-card flow-start"><small>01 / INTENT</small><strong>科学目标</strong><p>Natural-language task</p></article>
+              <span class="flow-link" aria-hidden="true">→</span>
+              <article class="flow-card"><small>02 / ORCHESTRATE</small><strong>DeepSeek Harness</strong><p>Plan · Route · Recover</p></article>
+              <span class="flow-link" aria-hidden="true">→</span>
+              <article class="flow-card flow-accent"><small>03 / CONTRACT</small><strong>Hardware Contract</strong><p>Discover · Describe · Control</p></article>
+              <span class="flow-link" aria-hidden="true">→</span>
+              <article class="flow-card"><small>04 / GUARDRAIL</small><strong>Safety Driver</strong><p>Validate · Clamp · Stop</p></article>
+              <span class="flow-link" aria-hidden="true">→</span>
+              <article class="flow-card flow-end"><small>05 / EXECUTE</small><strong>LeRobot + reBot</strong><p>Sim first · Real opt-in</p></article>
             </div>
-            <span class="flow-arrow" aria-hidden="true">→</span>
-            <div class="flow-node flow-accent">
-              <small>CONTRACT</small><strong>MHS-inspired Layer</strong><span>Discover · Describe · Control</span>
+            <div class="architecture-notes">
+              <span><i></i> Structured tool calls</span>
+              <span><i></i> Auditable state</span>
+              <span><i></i> Human takeover</span>
+              <span><i></i> Replaceable adapters</span>
             </div>
-            <span class="flow-arrow" aria-hidden="true">→</span>
-            <div class="flow-node">
-              <small>GUARDRAIL</small><strong>Safety Driver</strong><span>Validate · Clamp · Stop</span>
-            </div>
-            <span class="flow-arrow" aria-hidden="true">→</span>
-            <div class="flow-node flow-output">
-              <small>HARDWARE</small><strong>LeRobot + reBot</strong><span>Sim first · Real opt-in</span>
-            </div>
-          </div>
-
-          <div class="stack-grid">
-            <article class="stack-card reveal">
-              <span class="stack-code">MHS</span>
-              <h3>硬件语义层</h3>
-              <p>用设备描述、能力边界和状态模型，让智能体先理解硬件，再请求动作。</p>
-            </article>
-            <article class="stack-card reveal">
-              <span class="stack-code">DSH</span>
-              <h3>智能体 Harness</h3>
-              <p>编排模型、上下文、工具调用与恢复策略，把一次指令变成完整任务。</p>
-            </article>
-            <article class="stack-card reveal">
-              <span class="stack-code">MCP</span>
-              <h3>工具协议</h3>
-              <p>把发现、状态、移动和停止暴露为边界清晰、可组合的智能体工具。</p>
-            </article>
-            <article class="stack-card reveal">
-              <span class="stack-code">LR</span>
-              <h3>LeRobot 生态</h3>
-              <p>承接遥操作、数据采集、策略训练与推理，形成具身学习的数据闭环。</p>
-            </article>
-            <article class="stack-card reveal">
-              <span class="stack-code">RB</span>
-              <h3>reBot 执行端</h3>
-              <p>用可替换的设备适配器连接真实机械臂，同时保留仿真与安全降级路径。</p>
-            </article>
           </div>
 
           <aside class="research-note reveal">
-            <strong>研究边界</strong>
-            <p>
-              当前实现是基于公开资料形成的独立研究与兼容性探索。MHS 官方规范尚未公开，本项目不代表 Anthropic、Model Hardware Standard、DeepSeek、Hugging Face 或 Seeed Studio 的官方实现或背书。
-            </p>
+            <span>RESEARCH BOUNDARY</span>
+            <p>当前实现是基于公开资料形成的独立研究与兼容性探索。相关标准仍处研究预览阶段，本项目不代表任何相关机构的官方实现或背书。</p>
           </aside>
         </div>
       </section>
 
-      <section id="lab" class="lab section-mist">
-        <div class="page-shell lab-grid">
-          <div class="lab-copy reveal">
-            <p class="eyebrow eyebrow-dark"><span></span> 03 / OPEN HARDWARE AGENT LAB</p>
-            <h2>先把最小闭环跑通，再让每一种硬件接入。</h2>
-            <p>
-              我们正在搭建一个面向 LeRobot 与 Seeed reBot 的公开参考项目：从设备发现、状态查询到安全移动与紧急停止，全链路都可以在模拟环境中验证。
-            </p>
-            <ul class="lab-metrics" aria-label="当前项目指标">
-              <li><strong>02</strong><span>参考设备</span></li>
-              <li><strong>05</strong><span>MCP 工具</span></li>
-              <li><strong>10</strong><span>自动测试</span></li>
-              <li><strong>0</strong><span>默认真实运动</span></li>
-            </ul>
-            <a class="text-link" href="https://github.com/xychendave/open-hardware-agent-lab" target="_blank" rel="noreferrer">
-              查看 GitHub 仓库 <span aria-hidden="true">↗</span>
-            </a>
+      <section id="lab" class="section lab">
+        <div class="page-shell">
+          <div class="section-heading reveal">
+            <span class="section-badge">03 / OPEN HARDWARE AGENT LAB</span>
+            <h2>先让最小闭环可靠运行，<br />再连接更多真实设备。</h2>
+            <p>公开参考项目已经覆盖设备发现、状态读取、安全移动与紧急停止。所有真实动作默认关闭，先在模拟环境中验证完整链路。</p>
           </div>
 
-          <div class="terminal reveal" aria-label="Open Hardware Agent Lab 命令行演示">
-            <div class="terminal-bar">
-              <div><i></i><i></i><i></i></div>
-              <span>rebot-mhs-lab — simulation</span>
-              <button type="button" data-copy-command aria-label="复制运行命令">COPY</button>
-            </div>
-            <pre><code><span class="prompt">$</span> uv run mcp dev server.py
+          <div class="lab-grid">
+            <div class="terminal glass-panel reveal" aria-label="Open Hardware Agent Lab 命令行演示">
+              <div class="terminal-bar">
+                <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <span>rebot-mhs-lab — simulation</span>
+                <button type="button" data-copy-command aria-label="复制运行命令">COPY</button>
+              </div>
+              <pre><code><span class="prompt">$</span> uv run mcp dev server.py
 
 <span class="dim">[discovery]</span> 2 devices available
   ├─ lerobot-arm  <span class="ok">READY / SIM</span>
@@ -254,94 +237,62 @@
 
 <span class="ok">✓ policy validated</span>
 <span class="ok">✓ motion completed in simulation</span></code></pre>
-            <div class="terminal-footer"><span>SAFE BY DEFAULT</span><span>REAL MOTION REQUIRES OPT-IN</span></div>
+              <div class="terminal-footer"><span>SAFE BY DEFAULT</span><span>REAL MOTION REQUIRES OPT-IN</span></div>
+            </div>
+
+            <div class="lab-status">
+              <article class="metric-card reveal"><small>REFERENCE DEVICES</small><strong>02</strong><span>LeRobot / reBot</span></article>
+              <article class="metric-card reveal"><small>MCP TOOLS</small><strong>05</strong><span>Discover to stop</span></article>
+              <article class="metric-card reveal"><small>AUTOMATED TESTS</small><strong>10</strong><span>Current baseline</span></article>
+              <article class="metric-card safety-card reveal"><small>DEFAULT REAL MOTION</small><strong>0</strong><span><i></i> Explicit opt-in required</span></article>
+            </div>
           </div>
+
+          <a class="project-link glass-panel reveal" href="https://github.com/xychendave/open-hardware-agent-lab" target="_blank" rel="noreferrer">
+            <span><small>PUBLIC REPOSITORY</small><strong>xychendave/open-hardware-agent-lab</strong></span>
+            <b>查看代码、文档与路线图 <i aria-hidden="true">↗</i></b>
+          </a>
         </div>
       </section>
 
-      <section id="science" class="science section-paper">
+      <section class="section applications">
         <div class="page-shell">
-          <div class="section-heading section-heading-dark reveal">
-            <p class="eyebrow eyebrow-dark"><span></span> 04 / PHYSICAL AI FOR SCIENCE</p>
-            <h2>不只让机器人完成动作，<br />而是让实验系统获得学习能力。</h2>
+          <div class="section-heading centered reveal">
+            <span class="section-badge">04 / PHYSICAL AI FOR SCIENCE</span>
+            <h2>不止让机器人完成动作，<br />而是让实验系统获得学习能力。</h2>
           </div>
-
-          <div class="science-grid">
-            <article class="science-card reveal">
-              <span>01</span><div class="science-icon" aria-hidden="true">⌁</div>
-              <h3>自主实验</h3><p>从假设生成到设备执行，让智能体在受控边界中完成实验循环。</p>
-            </article>
-            <article class="science-card reveal">
-              <span>02</span><div class="science-icon" aria-hidden="true">◫</div>
-              <h3>材料发现</h3><p>连接样品制备、表征与反馈，加速候选材料的搜索与验证。</p>
-            </article>
-            <article class="science-card reveal">
-              <span>03</span><div class="science-icon" aria-hidden="true">⌬</div>
-              <h3>具身数据</h3><p>记录动作、观测与结果，把每次操作沉淀为可训练、可回放的数据。</p>
-            </article>
-            <article class="science-card reveal">
-              <span>04</span><div class="science-icon" aria-hidden="true">◎</div>
-              <h3>远程协作</h3><p>让研究者、模型与实验室设备跨空间协同，同时保留人工接管能力。</p>
-            </article>
+          <div class="application-grid">
+            <article class="application-card reveal"><span>01</span><div class="app-symbol">⌁</div><h3>自主实验</h3><p>从假设生成到设备执行，让智能体在受控边界内完成实验循环。</p></article>
+            <article class="application-card reveal"><span>02</span><div class="app-symbol">◫</div><h3>材料发现</h3><p>连接样品制备、表征与反馈，加速候选材料的搜索与验证。</p></article>
+            <article class="application-card reveal"><span>03</span><div class="app-symbol">⌬</div><h3>具身数据</h3><p>记录动作、观测与结果，把每次操作沉淀为可训练的数据。</p></article>
+            <article class="application-card reveal"><span>04</span><div class="app-symbol">◎</div><h3>远程协作</h3><p>让研究者、智能体与实验设备跨空间协同，并保留人工接管。</p></article>
           </div>
         </div>
       </section>
 
-      <section class="principles section-dark">
-        <div class="page-shell principles-grid">
-          <div class="section-index reveal">
-            <p class="eyebrow"><span></span> ENGINEERING PRINCIPLES</p>
-            <h2>开放接口。<br />安全边界。<br />可验证进化。</h2>
-          </div>
-          <ol class="principle-list">
-            <li class="reveal"><span>01</span><div><h3>Simulation First</h3><p>默认在模拟设备中完成开发、回归与演示，真实运动必须显式开启。</p></div></li>
-            <li class="reveal"><span>02</span><div><h3>Capability Before Control</h3><p>先发现能力与约束，再生成动作请求；不让模型猜测硬件边界。</p></div></li>
-            <li class="reveal"><span>03</span><div><h3>Human in the Loop</h3><p>关键操作可审批、全链路可观测，任何时刻都能停止并交还控制权。</p></div></li>
-            <li class="reveal"><span>04</span><div><h3>Replaceable Adapters</h3><p>协议层与设备驱动解耦，让新机械臂和科学仪器可以渐进接入。</p></div></li>
-          </ol>
-        </div>
-      </section>
-
-      <section id="roadmap" class="roadmap section-mist">
-        <div class="page-shell">
-          <div class="section-heading section-heading-dark reveal">
-            <p class="eyebrow eyebrow-dark"><span></span> 05 / ROADMAP</p>
-            <h2>从双臂 Demo，走向开放的科学智能体基础设施。</h2>
-          </div>
-          <ol class="roadmap-list">
-            <li class="is-active reveal"><span class="roadmap-dot"></span><small>NOW / 01</small><h3>参考闭环</h3><p>MCP 服务、模拟适配器、安全策略与 DeepSeek Harness 示例。</p></li>
-            <li class="reveal"><span class="roadmap-dot"></span><small>NEXT / 02</small><h3>双臂实机</h3><p>接入 LeRobot 与 reBot，完成受控遥操作和标准动作验证。</p></li>
-            <li class="reveal"><span class="roadmap-dot"></span><small>THEN / 03</small><h3>科学工作流</h3><p>将样品操作、视觉观测与实验记录组合成可复现实验任务。</p></li>
-            <li class="reveal"><span class="roadmap-dot"></span><small>VISION / 04</small><h3>开放生态</h3><p>联合硬件伙伴与研究者，沉淀可移植的 Physical AI 接口与数据。</p></li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="cta section-paper">
-        <div class="page-shell cta-panel reveal">
-          <div>
-            <p class="eyebrow eyebrow-dark"><span></span> BUILD WITH US</p>
-            <h2>把第一台机械臂，变成可学习的科学伙伴。</h2>
-          </div>
-          <div class="cta-actions">
-            <a class="button button-dark" href="https://github.com/xychendave/open-hardware-agent-lab" target="_blank" rel="noreferrer">浏览项目源码 <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://github.com/xychendave/open-hardware-agent-lab/discussions" target="_blank" rel="noreferrer">加入技术讨论</a>
+      <section id="connect" class="section connect">
+        <div class="page-shell connect-panel reveal">
+          <div class="connect-glow" aria-hidden="true"></div>
+          <span class="section-badge">BUILD THE PHYSICAL FUTURE</span>
+          <h2>和我们一起，把科学智能<br />带进真实世界。</h2>
+          <p>我们希望认识机器人、智能体、实验自动化领域的同行，以及相信 Physical AI for Science 的长期伙伴。</p>
+          <div class="connect-actions">
+            <a class="button button-primary" href="https://github.com/xychendave/open-hardware-agent-lab/discussions" target="_blank" rel="noreferrer">发起技术讨论 <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://github.com/xychendave" target="_blank" rel="noreferrer">联系项目发起人</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="page-shell">
+      <div class="page-shell footer-grid">
         <div class="footer-brand">
           <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
           <div><strong>清乐智能</strong><span>Physical AI for Science</span></div>
         </div>
-        <p>连接模型、智能体、科学仪器与机器人。</p>
-        <div class="footer-meta">
-          <span>© <span data-year>2026</span> 清乐智能</span>
-          <a href="https://github.com/xychendave/open-hardware-agent-lab" target="_blank" rel="noreferrer">GitHub ↗</a>
-        </div>
+        <p>连接智能体、科学仪器与机器人，探索可验证的物理智能。</p>
+        <div class="footer-links"><a href="#top">返回顶部 ↑</a><a href="https://github.com/xychendave/open-hardware-agent-lab" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        <div class="footer-meta"><span>© <span data-year>2026</span> 清乐智能</span><span>BUILDING IN THE OPEN</span></div>
       </div>
     </footer>
 
