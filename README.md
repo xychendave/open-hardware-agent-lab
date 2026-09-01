@@ -2,6 +2,8 @@
 
 > 以 Seeed reBot 双机械臂为第一套参考硬件，探索安全、可复现、模型无关的 AI-to-hardware 接口。
 
+**清乐智能 · Physical AI for Science** — [访问项目网站](https://xychendave.github.io/open-hardware-agent-lab/)
+
 这是一个面向两台 Seeed Studio reBot 机械臂的安全起步项目。它先把 Anthropic 已公开介绍的 MHS 核心概念——设备发现、统一 `read`/`write`、自然语言硬件描述、设备级安全限制——做成可运行的仿真，再通过 MCP 暴露给 Claude、DeepSeek Harness 或其他智能体。
 
 > 当前状态：**MHS-ready prototype，不是官方 MHS 实现。** 截至 2026-09-01，MHS 仍是申请制研究预览，规范与 SDK 尚未公开。拿到官方预览后，计划只替换协议/驱动适配层。
