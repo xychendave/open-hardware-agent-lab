@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rebot-mhs-lab"
+version = "0.1.0"
+description = "A safe, model-agnostic AI-to-hardware reference lab, starting with dual reBot arms"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "mcp[cli]>=2,<3",
+]
+
+[project.urls]
+Repository = "https://github.com/xychendave/open-hardware-agent-lab"
+Documentation = "https://github.com/xychendave/open-hardware-agent-lab/tree/main/docs"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+]
+
+[project.scripts]
+rebot-mhs-demo = "rebot_mhs_lab.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rebot_mhs_lab"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

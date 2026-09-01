@@ -1,0 +1,46 @@
+{
+  "devices": [
+    {
+      "device_id": "rebot-dm",
+      "manufacturer": "Seeed Studio",
+      "model": "reBot Arm B601-DM",
+      "driver": "simulation",
+      "connection": "serial bridge in the future",
+      "degrees_of_freedom": 7,
+      "payload_kg": 1.5,
+      "weight_kg": 4.5,
+      "supply_voltage_v": 24,
+      "natural_language_tags": [
+        "Desktop six-axis arm with one gripper",
+        "Keep people at least one metre away during commissioning",
+        "Never hot-plug power or signal cables",
+        "All positions in this prototype use normalized LeRobot coordinates from -1 to 1"
+      ]
+    },
+    {
+      "device_id": "rebot-rs",
+      "manufacturer": "Seeed Studio",
+      "model": "reBot Arm B601-RS",
+      "driver": "simulation",
+      "connection": "SocketCAN in the future",
+      "degrees_of_freedom": 7,
+      "payload_kg": 2.5,
+      "weight_kg": 6.7,
+      "supply_voltage_v": 48,
+      "natural_language_tags": [
+        "Desktop six-axis arm with one gripper",
+        "Use a Linux hardware host for the SocketCAN follower connection",
+        "Never hot-plug power or signal cables",
+        "All positions in this prototype use normalized LeRobot coordinates from -1 to 1"
+      ]
+    }
+  ],
+  "safety": {
+    "normalized_position_min": -1.0,
+    "normalized_position_max": 1.0,
+    "max_delta_per_command": 0.15,
+    "require_explicit_enable": true,
+    "require_confirmation_for_motion": true,
+    "start_disabled": true
+  }
+}

@@ -1,0 +1,13 @@
+# Project-local DeepSeek Harness patch.
+# Start Harness from the repository root so process.cwd() resolves correctly.
+- insert:
+    - id: mcp-rebot
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: rebot
+        transport: stdio
+        command: uv
+        args: ['run', 'python', 'server.py']
+        cwd: !!js process.cwd()
+        toolCallTimeoutMs: 30000
+        failOnStartupError: true

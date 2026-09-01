@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible simulator, protocol or hardware-adapter problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Driver mode
+      options:
+        - Simulation
+        - Read-only real hardware
+        - Supervised real hardware
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware and host
+      description: Omit unique serial numbers.
+      placeholder: B601-RS on Ubuntu 22.04
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include the exact sanitized command and minimal steps.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected safety behavior
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, serial numbers, private footage and customer data.
+          required: true
+        - label: This report does not disclose a safety/security bypass that should be reported privately.
+          required: true
