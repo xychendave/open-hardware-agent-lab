@@ -62,3 +62,12 @@ An in-memory MCP client discovered five tools, read the device resource and succ
 - [Seeed B601-RS guide](https://wiki.seeedstudio.com/cn/rebot_b601_rs_getting_started/)
 - [Seeed reBot repository](https://github.com/Seeed-Projects/reBot-DevArm)
 - [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
+
+## 2026-09-01 — Public reference repository
+
+- Created the public repository [`xychendave/open-hardware-agent-lab`](https://github.com/xychendave/open-hardware-agent-lab).
+- Published the initial baseline at commit `0cf2692`.
+- Enabled GitHub Issues, Discussions and private vulnerability reporting.
+- Added public architecture, roadmap, safety policy, contributor boundary and three initial ADRs.
+- Added a project-local DeepSeek Harness patch that connects the hardware server through the official MCP client plugin.
+- Kept the repository unlicensed while the startup decides between open-source, open-core, dual-license and patent/licensing strategies.
