@@ -1,5 +1,7 @@
 # Open Hardware Agent Lab
 
+![Open Hardware Agent Lab：Agent 通过 MCP、CLI 或 API，经安全设备契约连接仿真与双机械臂硬件](docs/assets/open-hardware-agent-lab-architecture-v1.png)
+
 > 以 Seeed reBot 双机械臂为第一套参考硬件，探索安全、可复现、模型无关的 AI-to-hardware 接口。
 
 **清乐智能 · Physical AI for Science** — [访问项目网站](https://xychendave.github.io/open-hardware-agent-lab/)
